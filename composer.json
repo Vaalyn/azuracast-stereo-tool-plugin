@@ -1,0 +1,18 @@
+{
+    "name": "vaalyn/azuracast-stereo-tool-plugin",
+    "description": "AzuraCast Plugin adding support for the Stereo Tool software-based audio processor.",
+    "type": "azuracast-plugin",
+    "authors": [
+        {
+            "name": "Vaalyn",
+            "email": "vaalyndev@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Plugin\\StereoToolPlugin\\": "src"
+        }
+    },
+    "require": {
+    }
+}
