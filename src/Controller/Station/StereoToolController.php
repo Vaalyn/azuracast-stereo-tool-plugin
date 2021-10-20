@@ -77,6 +77,7 @@ class StereoToolController
             $stationStereoTool = new StationStereoTool($station);
         }
 
+        /** @var StationStereoTool $stationStereoTool */
         $stationStereoTool = $stationStereoToolRepository->fromArray($stationStereoTool, $data);
 
         $station->setNeedsRestart(true);

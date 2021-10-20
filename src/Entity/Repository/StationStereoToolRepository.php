@@ -23,8 +23,12 @@ class StationStereoToolRepository extends Repository
         parent::__construct($entityManager, $serializer, $environment, $logger);
     }
 
+
     public function fetchStationStereoTool(Entity\Station $station): ?StationStereoTool
     {
-        return $this->repository->findOneBy(['station' => $station]);
+        /** @var StationStereoTool|null $stationStereoTool */
+        $stationStereoTool = $this->repository->findOneBy(['station' => $station]);
+
+        return $stationStereoTool;
     }
 }

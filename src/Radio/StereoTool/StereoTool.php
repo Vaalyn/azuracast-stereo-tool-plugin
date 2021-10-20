@@ -43,7 +43,7 @@ class StereoTool
             : null;
     }
 
-    public function getConfigurationPath(Entity\Station $station): ?string
+    public function getConfigurationPath(Entity\Station $station): string
     {
         return $station->getRadioConfigDir() . '/radio.sts';
     }

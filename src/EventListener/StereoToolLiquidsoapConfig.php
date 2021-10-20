@@ -26,8 +26,9 @@ class StereoToolLiquidsoapConfig implements EventSubscriberInterface
         ];
     }
 
-    public function writeStereToolConfiguration(Event\Radio\WriteLiquidsoapConfiguration $event)
-    {
+    public function writeStereToolConfiguration(
+        Event\Radio\WriteLiquidsoapConfiguration $event
+    ): Event\Radio\WriteLiquidsoapConfiguration {
         $station = $event->getStation();
 
         $stationStereoTool = $this->stationStereoToolRepository->fetchStationStereoTool($station);
